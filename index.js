@@ -11,6 +11,9 @@ const REDIRECT_URI = `http://localhost:4000/auth`;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
+app.get('/', (req,res)=>{
+res.send('Hello World');
+})
 app.get('/auth', (req, res) => {
     const code = req.query.code;
     const API_OAUTH_TOKEN = 'https://api.hubapi.com/oauth/v1/token';
