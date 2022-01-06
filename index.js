@@ -10,7 +10,8 @@ const PORT = process.env.PORT || 3000;
 const CLIENT_ID='02e3057a-9494-4e56-a81d-601e0e31cea4'
 const CLIENT_SECRET ='1473a794-df85-4c1d-ae22-0edc2ffe37f1'
 let SCOPES = ['crm.objects.contacts.read'];
-const SCOPE='crm.contacts.read,forms'const refreshTokenStore = {};
+const SCOPE='crm.contacts.read,forms';
+const refreshTokenStore = {};
 const accessTokenCache = new NodeCache({ deleteOnExpire: true });
 
 if (!CLIENT_ID || !CLIENT_SECRET) {
