@@ -196,7 +196,9 @@ const displayContactName = (res, contact) => {
   const { firstname, lastname } = contact.properties;
   res.write(`<p>Contact name: ${firstname.value} ${lastname.value}</p>`);
 };
-
+app.get('/test', (req,res)=>{
+res.send('Hello World');
+})
 app.get('/', async (req, res) => {
   res.setHeader('Content-Type', 'text/html');
   res.write(`<h2>HubSpot OAuth 2.0 Quickstart App</h2>`);
