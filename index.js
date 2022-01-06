@@ -217,5 +217,5 @@ app.get('/error', (req, res) => {
   res.end();
 });
 
-app.listen(PORT, () => console.log(`=== Starting your app on http://localhost:${PORT} ===`));
+app.listen(process.env.PORT || PORT, () => console.log(`=== Starting your app on http://localhost:${PORT} ===`));
 opn(`http://localhost:${PORT}`);
