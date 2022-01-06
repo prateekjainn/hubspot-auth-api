@@ -39,7 +39,8 @@ if (SCOPE) {
 }
 
 // On successful install, users will be redirected to /oauth-callback
-const REDIRECT_URI = `http://localhost:${PORT}/oauth-callback`;
+//const REDIRECT_URI = `http://localhost:${PORT}/oauth-callback`;
+const REDIRECT_URI = `http://hubspot-auth-api.herokuapp.com/oauth-callback`;
 
 //===========================================================================//
 
